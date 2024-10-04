@@ -419,3 +419,99 @@ hr{
     background-color: #4d84e2;
   }
   
+  @media (max-width: 768px) {
+    /* Navbar */
+    .header {
+        padding: 20px 5%;
+    }
+
+    .logo {
+        font-size: 24px;
+    }
+
+    .navbar a {
+        font-size: 16px;
+        margin-left: 20px;
+    }
+
+    /* Home Section */
+    .home {
+        height: auto;
+        padding: 50px 10%;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .home-content h1 {
+        font-size: 24px;
+    }
+
+    .home-content h4 {
+        font-size: 18px;
+    }
+
+    .btn {
+        width: 130px;
+        height: 45px;
+        font-size: 14px;
+    }
+
+    /* Popup */
+    .popup-content {
+        width: 90%;
+        margin: 25% auto;
+    }
+}
+
+@media (max-width: 480px) {
+    /* Navbar */
+    .header {
+        padding: 15px 5%;
+    }
+
+    .logo {
+        font-size: 20px;
+    }
+
+    .navbar a {
+        font-size: 14px;
+        margin-left: 10px;
+    }
+
+    /* Home Section */
+    .home-content h1 {
+        font-size: 20px;
+    }
+
+    .home-content h4 {
+        font-size: 16px;
+    }
+
+    .btn {
+        width: 120px;
+        height: 40px;
+        font-size: 12px;
+    }
+
+    /* Popup */
+    .popup-content {
+        width: 100%;
+        margin: 20% auto;
+    }
+
+    .item-front img {
+        width: 150px;
+        height: 220px;
+    }
+
+    /* Footer */
+    footer {
+        padding: 50px 0 20px;
+        font-size: 12px;
+    }
+
+    .col {
+        flex-basis: 100%;
+        padding: 5px;
+    }
+}
