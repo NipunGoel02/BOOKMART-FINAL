@@ -44,4 +44,28 @@ window.onclick = function(event) {
     }
 };
 
-  
+   // Get the elements
+   const servicesLink = document.getElementById('services-link');
+   const dropdownContent = document.getElementById('services-dropdown');
+   onclick((servicesLink)=>console.log("clicked"
+   ) )
+
+   // Hide the dropdown initially
+   dropdownContent.style.display = 'none';
+
+   // Toggle the dropdown when the "Services" link is clicked
+   servicesLink.addEventListener('click', function(event) {
+       event.preventDefault(); // Prevent default anchor behavior
+       if (dropdownContent.style.display === 'none') {
+           dropdownContent.style.display = 'block';
+       } else {
+           dropdownContent.style.display = 'none';
+       }
+   });
+
+   // Optional: Hide the dropdown when clicking outside
+   document.addEventListener('click', function(event) {
+       if (!servicesLink.contains(event.target) && !dropdownContent.contains(event.target)) {
+           dropdownContent.style.display = 'none';
+       }
+   });

@@ -515,3 +515,33 @@ hr{
         padding: 5px;
     }
 }
+ 
+ .dropdown {
+     display: flex;
+     gap: 45px
+ }
+ 
+ .dropdown-content {
+     display: none;
+     position: absolute;
+     background-color: #333;
+     min-width: 150px;
+     z-index: 1;
+ }
+ 
+ .dropdown-content a {
+     color: #fff;
+     text-decoration: none;
+     display: block;
+     padding: 10px 15px;
+     transition: background-color 0.3s ease;
+ }
+ 
+ .dropdown-content a:hover {
+     background-color: #575757;
+ }
+ 
+ .dropdown:hover .dropdown-content {
+     display: block;
+ }
+ 
